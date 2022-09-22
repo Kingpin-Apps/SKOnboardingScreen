@@ -79,7 +79,7 @@ class SKOnboardingScreenState extends State<SKOnboardingScreen> {
                 children: <Widget>[
                   Container(
                     alignment: Alignment.centerRight,
-                    child: FlatButton(
+                    child: TextButton(
                       onPressed: () {
                         widget.skipClicked("Skip Tapped");
                       },
@@ -94,7 +94,7 @@ class SKOnboardingScreenState extends State<SKOnboardingScreen> {
                     ),
                   ),
                   Container(
-                    // height: 500.0,
+                    height: MediaQuery.of(context).size.height * .8,
                     color: Colors.transparent,
                     child: PageView(
                         physics: ClampingScrollPhysics(),
